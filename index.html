@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelplus Case Study</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_wrapper">
+            <ul class="menu">
+                <li><a onclick="addUserForm()"><b>Add Users</b></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 class="pageHeader">Pixelplus Case Study</h1>
+    <div id="loader" class="fullpageloader">
+        <div class="loader">
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+            <div id="errorMsgSpinner">Yükleniyor...</div>
+        </div>
+    </div>
+    <div id="list-content">
+        <div class="center-aligned-container">
+            <div id="contents" class="content">
+            </div>
+
+            <div id="paginations" class="pagination">
+            </div>
+        </div>
+    </div>
+    <div id="info-content">
+        <div class="center-aligned-container">
+
+            <a onclick="returnBack();" class="btn-flip" data-back="Back" data-front="Go"></a>
+
+            <div id="details">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="add-content">
+        <div class="center-aligned-container">
+            <a onclick="returnBack();" class="btn-flip" data-back="Back" data-front="Go"></a>
+            <div id="add-form">
+                <div>
+                    <h3>Add User</h3>
+                    <div class="field">
+                        <input type="text" id="nametxt" placeholder="Name">
+                    </div>
+                    <div class="field">
+                        <input type="text" id="jobtxt" placeholder="Name">
+                    </div>
+                    <button onclick="submitButton()" class="submitbutton">Add User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
