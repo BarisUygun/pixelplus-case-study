@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             var api_support = fetchedData.support;
 
             currentPage = api_page;
-            pageLength = api_per_page;
-            //pageLength = 3;
+            //pageLength = api_per_page;
+            pageLength = 3;
 
             noOfPages = api_total_pages;
             numberofusers = api_total;
